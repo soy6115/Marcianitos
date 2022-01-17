@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="tipografia">
+        <item name="android:fontFamily">@font/webhostinghub</item>
+    </style>
+
+    <style name="h1" parent="tipografia">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/crema</item>
+    </style>
+
+    <style name="textoRegistro" parent="tipografia">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textoRegistroDerecha" parent="textoRegistro">
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="btnVolver" parent="tipografia">
+        <item name="android:textColor">@color/sangre</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/transparente</item>
+
+        <item name="android:layout_gravity">center|bottom</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+    <style name="liFilaRegistro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:visibility">visible</item>
+
+    </style>
+
+
+
+    <!--<item name="android:"></item>-->
+
+</resources>

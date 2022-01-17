@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/divContenedor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvContadorPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="2dp"
+        android:gravity="top|start"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+
+        tools:text="00026"
+
+        android:textColor="@color/white"
+        android:fontFamily="@font/webhostinghub"
+        />
+
+    <ImageButton
+        android:id="@+id/btnSonido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="2dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:alpha="0.5"
+        android:background="@drawable/btn_sonido_on"/>
+
+    <LinearLayout
+        android:id="@+id/lldivGuardarPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:elevation="12dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:maxLength="7"
+            android:inputType="text"
+            android:digits="abcdefghijklmnñopqrstuvwxyz"
+            android:fontFamily="@font/webhostinghub"
+            android:hint="nombre"
+            android:backgroundTint="@color/transparente"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:fontFamily="@font/webhostinghub"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/transparente"/>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/divSangre"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/bg1"
+        android:elevation="-1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_uno"/>
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:elevation="-1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dos"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/vNave"
+        android:layout_width="120px"
+        android:layout_height="90px"
+        android:background="@drawable/nave"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:elevation="2dp" />
+
+    <LinearLayout
+        android:id="@+id/llBtnsMovimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_gravity="end|bottom"
+        android:elevation="-1dp"
+        android:alpha="0.5"
+
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btnMovIzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/m_izq"/>
+
+        <ImageButton
+            android:id="@+id/btnMovDer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/m_der"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnFuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bomba"
+
+        android:layout_gravity="start|bottom"
+        android:elevation="-1dp"
+        android:alpha="0.5"
+
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="20dp"/>
+
+</FrameLayout>
